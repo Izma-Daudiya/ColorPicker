@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Color Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Choose a Color</h1>
+    <input type="color" id="color-picker" class="color-picker">
+    <div class="color-display" id="color-display"></div>
+  </div>
+</body>
+<script>
+  const color = document.getElementById('color-picker')
+  const display = document.getElementById('color-display')
+
+  color.addEventListener('input', function () {
+    const selectedColor = color.value
+    display.style.backgroundColor = selectedColor 
+  })
+  
+
+</script>
+</html>
